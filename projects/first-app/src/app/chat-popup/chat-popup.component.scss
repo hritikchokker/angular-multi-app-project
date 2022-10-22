@@ -1,0 +1,41 @@
+.chatpopup_wrapper {
+  width: 300px;
+  height: 420px;
+  z-index: 900;
+  bottom: 50px;
+  border-radius: 10px;
+  right: 10px;
+  position: fixed;
+  background: linear-gradient(135deg, #f36265 0%, #961276 100%);
+  h3 {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form_field {
+      width: 250px;
+      margin: 20px 0;
+      input,
+      textarea {
+        width: 100%;
+        border-radius: 8px;
+        outline: none;
+        padding: 10px 0;
+      }
+    }
+    button {
+      padding: 14px;
+      outline: none;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background-color: blue;
+      color: #fff;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FirstAppComponent } from './first-app.component';
+import { ChatPopupComponent } from './chat-popup.component';
 
-describe('FirstAppComponent', () => {
-  let component: FirstAppComponent;
-  let fixture: ComponentFixture<FirstAppComponent>;
+describe('ChatPopupComponent', () => {
+  let component: ChatPopupComponent;
+  let fixture: ComponentFixture<ChatPopupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FirstAppComponent ]
+      declarations: [ ChatPopupComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FirstAppComponent);
+    fixture = TestBed.createComponent(ChatPopupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

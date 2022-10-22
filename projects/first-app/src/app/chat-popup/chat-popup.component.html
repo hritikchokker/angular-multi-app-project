@@ -1,0 +1,22 @@
+<div class="chatpopup_wrapper">
+  <h3>Submit Your Query</h3>
+  <form [formGroup]="queryForm" (ngSubmit)="onSubmit()">
+    <div class="form_field">
+      <input
+        placeholder="enter type of query"
+        formControlName="type"
+        type="text"
+      />
+    </div>
+    <div class="form_field">
+      <textarea
+        placeholder="enter query here..."
+        formControlName="message"
+        id=""
+        cols="30"
+        rows="5"
+      ></textarea>
+    </div>
+    <button type="submit">submit query</button>
+  </form>
+</div>
