@@ -1,0 +1,41 @@
+.popup_container {
+  // position: fixed;
+  // top: 30px;
+  // right: 0;
+  background: linear-gradient(135deg, #ce9ffc 0%, #7367f0 100%);
+  min-height: 500px;
+  min-width: 400px;
+  &_listwrapper {
+    max-height: 400px;
+    overflow-y: scroll;
+    &_card {
+      display: flex;
+      justify-content: space-between;
+      p {
+        width: 417px;
+      }
+      &_img {
+        width: 60px;
+        height: 70px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &_action {
+        display: flex;
+        &_img {
+          cursor: pointer;
+        }
+        &_img:last-child {
+          width: 60px;
+          height: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

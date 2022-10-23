@@ -4,16 +4,67 @@
   </h2>
 </header>
 
-<div class="chat_query_list">
-  <h3>message received from chatbot project</h3>
-  <div class="chat_query_list_item">
-    <ng-container *ngFor="let query of chatQueryList">
-      <h4>
-        {{ query.type }}
-      </h4>
-      <h4>
-        {{ query.message }}
-      </h4>
-    </ng-container>
+<div class="app_actions">
+  <div class="chat-btn">
+    <button
+      *ngIf="!chatAppLoaded; else destoryaction"
+      (click)="bootstrapChatBot()"
+    >
+      load chat project
+    </button>
+    <ng-template #destoryaction>
+      <button (click)="onAppDestroy('chatapp')">destroy chat app</button>
+    </ng-template>
+  </div>
+  <div class="notification-btn">
+    <button
+      *ngIf="!notificationAppLoaded; else destroyNotification"
+      (click)="bootstrapNotificationProject()"
+    >
+      load notification project
+    </button>
+    <ng-template #destroyNotification>
+      <button (click)="onAppDestroy('notificationapp')">
+        destroy notification project
+      </button>
+    </ng-template>
+
+    <button *ngIf="!notificationLoaded" (click)="loadNotifications()">
+      Load notification Data ?
+    </button>
+    <button *ngIf="notificationLoaded" (click)="loadNotifications(false)">
+      clear notifications?
+    </button>
+  </div>
+</div>
+
+<div class="action_wrapper">
+  <div class="chat_query_list">
+    <h3>message received from chatbot project</h3>
+    <div class="chat_query_list_item">
+      <ng-container *ngFor="let query of chatQueryList">
+        <h4>
+          {{ query.type }}
+        </h4>
+        <h4>
+          {{ query.message }}
+        </h4>
+      </ng-container>
+    </div>
+  </div>
+  <div class="notification_action_wrapper">
+    <h3>
+      action performed from notification projects
+    </h3>
+    <div class="notification_action_wrapper_list">
+      <div
+        *ngFor="let item of userNotificationActionList"
+        class="notification_action_wrapper_list_item"
+      >
+        <p>
+          {{ item }}
+        </p>
+      </div>
+    </div>
   </div>
 </div>

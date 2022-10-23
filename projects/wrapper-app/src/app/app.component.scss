@@ -1,13 +1,39 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
-header{
-    display: flex;
-    justify-content: center;
+header {
+  display: flex;
+  justify-content: center;
 }
 
-.chat_query_list{
-    
+.chat_query_list {
+}
+
+.app_actions {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 30px 0;
+  .chat-btn,
+  .notification-btn {
+    button {
+      padding: 13px;
+      margin: 5px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: aqua;
+      //   color: #fff;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.action_wrapper {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
 }

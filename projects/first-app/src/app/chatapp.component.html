@@ -1,0 +1,11 @@
+<div class="chat_wrapper">
+  <div class="chat_wrapper_img" [class.cross_icon]="flag">
+    <img
+      (click)="loadChatPopup()"
+      [src]="!flag ? '/assets/bot_icon.png' : '/assets/flat_cross_icon.png'"
+      alt=""
+    />
+  </div>
+</div>
+
+<ng-template appDynamicComponent></ng-template>

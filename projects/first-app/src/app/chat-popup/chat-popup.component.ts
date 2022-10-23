@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, inject, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CommonPlatformService } from 'projects/wrapper-app/src/app/common-platform.service';
+import { CommonPlatformService } from 'projects/shared/services/common-platform.service';
 
 @Component({
   selector: 'app-chat-popup',
