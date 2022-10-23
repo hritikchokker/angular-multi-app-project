@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve wrapper-app",
     "build": "ng build wrapper-app && ng build first-app && ng build second-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

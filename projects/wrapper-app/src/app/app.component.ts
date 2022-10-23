@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
         this.changeDetactorRef.detectChanges();
       }
     })
-    this.bootstrapNotificationProject();
+    // this.bootstrapNotificationProject();
     this.listenForUserNotificationAction();
   }
 
